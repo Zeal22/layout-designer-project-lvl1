@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap');
+
+:root {
+    /* colors */
+    --white: #fff;
+    --transporant-white: #d7ccc0;
+    --light: #f5f4f0;
+    --main: #fe8a02;
+    --main-dark: #42413c;
+    --dark: #2a2626;
+    --transporant-dark: #908d8b;
+    --brown: #b09a81;
+    --blue: #1085c5;
+
+    /* font */
+    --main-font: "Open Sans";
+    --heading-font: "Neucha";
+    --font-size: 16px;
+    --font-line-height: 1.6em;
+    --font-color: #2A2626;
+
+    /* headings */
+    --h-line-height: 1.2em;
+    --h1-size: 72px;
+    --h2-size: 60px;
+    --h3-size: 34px;
+
+    /* section */
+    --max-content-width: 1110px;
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+section {
+    max-width: var(--max-content-width);
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bg {
+    position: relative;
+}
+
+.bg::before {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+}
