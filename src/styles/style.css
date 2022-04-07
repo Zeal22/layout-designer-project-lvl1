@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap');
 
+* {
+    box-sizing: border-box;
+  }
+
 :root {
     /* colors */
     --white: #fff;
@@ -29,6 +33,90 @@
     --max-content-width: 1110px;
 }
 
+/* reset */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+input,
+button {
+    padding: 0;
+
+    border:  none;
+}
+
+/* elements */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    color: var(--dark);
+    font-weight: 400;
+    font-size: var(--font-size);
+    font-family: var(--main-font);
+}
+
+.bg {
+    position: relative;
+}
+
+.bg::before {
+    
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(/src/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.1;
+
+    content: "";    
+}
+
+.container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+h1,
+h2,
+h3 {
+    z-index: 1;
+
+    color: var(--main);
+    font-family: var(--heading-font);
+    line-height: var(--h-line-height);
+}
+
+.dark {
+    color: var(--dark);
+}
+
 h1 {
     font-size: var(--h1-size);
 }
@@ -41,25 +129,57 @@ h3 {
     font-size: var(--h3-size);
 }
 
-section {
-    max-width: var(--max-content-width);
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.text-col {
+    display: flex;
 }
 
-.bg {
-    position: relative;
+.text-block {
+    flex-basis: 50%;
 }
 
-.bg::before {
+.text-block:nth-child(1) {
+    margin-right: 30px;
+}
+
+p {
+    line-height: var(--font-line-height);
+}
+
+.text-block .quot {
+    margin: 1em 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 24px;
+
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: var(--main);
+    cursor: pointer;
+}
+
+/* header */
+
+header {
+    background-color: var(--light);
+}
+
+header .container {
+    justify-content: space-between;
+    height: 100vh;
+    min-height: 900px;
+}
+
+.header-img {
     position: absolute;
+    top: 55px;
+    right: -270px;
+}
 
-    width: 100%;
-    height: 100%;
-
-    background-image: url(../images/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
+header .btn.nav {
+    margin-top: 40px;
 }
