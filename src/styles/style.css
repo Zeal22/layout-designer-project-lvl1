@@ -367,3 +367,78 @@ ul + p {
 
 /* Footer */
 
+.subscription-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 190px;
+    padding: 0 55px;
+
+    color: var(--white);
+
+    background-color: var(--dark);
+}
+
+.form-block {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 15px;
+}
+
+.form-block .title {
+    margin-bottom: 7px;
+
+    font-size: 18px;
+}
+
+.subscription-form {
+    display: flex;
+    width: 100%;
+}
+
+.subscription-form input {
+    flex-grow: 2;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.subscription-form .btn {
+    width: 70px;
+    height: 50px;
+}
+
+.subscription-form .btn::before {
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/send.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: '';
+}
+
+.terms {
+    margin: 3px 0;
+
+    font-size: 12px;
+}
+
+.terms a {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+}
+
+.copyright p {
+    margin-bottom: 18px;
+}
+
+.copyright a {
+    color: var(--blue);
+    text-decoration: underline;
+}
