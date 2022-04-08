@@ -376,7 +376,7 @@ ul + p {
 
     color: var(--white);
 
-    background-color: var(--dark);
+    background-color: var(--main-dark);
 }
 
 .form-block {
