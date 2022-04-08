@@ -21,7 +21,7 @@
   --heading-font: "Neucha";
   --font-size: 16px;
   --font-line-height: 1.6em;
-  --font-color: #2A2626;
+  --font-color: #2a2626;
 
   /* headings */
   --h-line-height: 1.2em;
@@ -205,7 +205,7 @@ header .btn.nav {
   height: 569px;
   margin-top: 30px;
   border: none;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
 }
 
 /* Navigation */
@@ -215,8 +215,7 @@ header .btn.nav {
 }
 
 #navigation .container {
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-content: flex-start;
   padding-top: 200px;
 }
@@ -282,7 +281,7 @@ header .btn.nav {
 
 .bias-img {
   flex-shrink: 0;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
 }
 
 .bias-img.img-left {
@@ -384,10 +383,10 @@ ul + p {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url(../images/send.svg);
+  background-image: url("../images/send.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  content:'';
+  content: "";
 }
 
 .terms {
