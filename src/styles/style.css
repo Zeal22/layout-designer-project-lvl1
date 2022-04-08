@@ -294,7 +294,7 @@ header .btn.nav {
 .bg-dark {
     color: var(--white);
 
-    background-color: var(--dark);
+    background-color: var(--brown);
 }
 
 .top-block {
@@ -364,3 +364,6 @@ header .btn.nav {
 ul + p {
     margin: 20px 0 18px;
 }
+
+/* Footer */
+
