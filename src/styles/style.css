@@ -166,6 +166,12 @@ p {
     cursor: pointer;
 }
 
+.subtext {
+    font-size: 34px;
+    font-family: var(--heading-font);
+    line-height: var(--h-line-height);
+}
+
 /* header */
 
 header {
@@ -277,4 +283,84 @@ header .btn.nav {
 
 .card:hover > h3 {
     color: var(--white);
+}
+
+/* Main Section */
+
+.bg-light {
+    background-color: var(--light);
+}
+
+.bg-dark {
+    color: var(--white);
+
+    background-color: var(--dark);
+}
+
+.top-block {
+    display: flex;
+}
+
+.bias-img {
+    flex-shrink: 0;
+
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.bias-img.img-left {
+    margin-right: 30px;
+}
+
+.bias-img.img-right {
+    margin-left: 30px;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-family: var(--heading-font);
+    line-height: var(--h-line-height);
+}
+
+.bg-light .subtitle {
+    color: var(--transporant-dark);
+}
+
+.bias .subtext {
+    margin-top: 30px;
+}
+
+.how-work {
+    margin-top: 100px;
+}
+
+.header {
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.bg-light .header {
+    color: var(--white);
+
+    background-color: var(--brown);
+}
+
+.bg-dark .header {
+    color: var(--brown);
+
+    background-color: var(--white);
+}
+
+.header h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: var(--h-line-height);
+    text-transform: uppercase;
+}
+
+.how-work .text-col {
+    margin-top: 20px;
+}
+
+ul + p {
+    margin: 20px 0 18px;
 }
